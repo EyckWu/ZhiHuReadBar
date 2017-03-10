@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_article"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eyckwu.readbar.controller.activity.ArticleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="#009dd7"
+        android:paddingTop="33dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_article_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingLeft="15dp"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+        <TextView
+            android:id="@+id/tv_artical_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:drawableLeft="@drawable/comment"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingRight="23dp"
+            android:text="0"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_artical_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/praise"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingRight="23dp"
+            android:text="0"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/wv_article_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+
+        <ImageView
+            android:id="@+id/iv_main_content_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#696969"
+            android:scaleType="fitXY" />
+
+        <com.eyckwu.readbar.view.InterceptViewPager
+            android:id="@+id/vp_main_content_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.eyckwu.readbar.view.InterceptViewPager>
+
+        <TextView
+            android:id="@+id/tv_main_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="63dp"
+            android:text="知乎读吧"
+            android:textColor="#ffffff"
+            android:textSize="23dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_main_content_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
